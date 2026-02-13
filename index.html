@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Portfolio Website-Samiksha</title>
+  <title>SamasyaVerse - Tech Content Creator & Builder</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- bootstrap CDN -->
@@ -20,7 +20,7 @@
     <!-- Add class of bg-light to nav element -->
     <nav class="navbar navbar-expand-lg fixed-top navbarScroll navbar-dark">
         <div class="container">
-            <a class="navbar-brand " href="#">Samiksha</a>
+            <a class="navbar-brand " href="#">SamasyaVerse</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -33,11 +33,7 @@
                         <a class="nav-link" href="#about">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#services">Impact and Win</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#portfolio">Portfolio</a>
-                    
+                        <a class="nav-link" href="#services">Impact & Insights</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#contact">Contact</a>
@@ -71,20 +67,46 @@
     <section class="container mt-4 pt-4 section" id="about">
         <h1 class="text-center">About Me</h1>
         
-        <div class="row mt-4">
-            <div class="col-lg-6">
-                <img src="images/aboutme.JPG" class="image_about" alt="">
+        <!-- The Person Section -->
+        <div class="row mt-5 align-items-center mb-5">
+            <div class="col-lg-5 mb-4 mb-lg-0">
+                <img src="images/aboutme.JPG" class="image_about" alt="Samiksha">
             </div>
 
-            <div class="col-lg-6">
-                <p style="text-align: justify;"> 
-                    Hello again, it's me, Samiksha Khadka—a simple girl from Okhaldhuga with a voracious appetite for computer science and a deep interest in policy and governance matters. Well, not just those; in fact, my interests are quite diverse, ever-changing, making it a challenge to keep tabs on them. Yet, amidst the fluctuations, my love for technology and my curiosity about understanding society have remained constant.
+            <div class="col-lg-7">
+                <div class="about_card personal_card">
+                    <div class="about_card_header personal_header">
+                        <i class="fas fa-heart about_icon"></i>
+                        <h3 class="about_subtitle">The Person</h3>
+                    </div>
+                    <p class="about_text">
+                        Hello, I'm Samiksha Khadka—a girl from Okhaldhuga with an insatiable appetite for computer science and an unwavering curiosity about society. My interests are wonderfully diverse and ever-evolving, yet my passion for technology and desire to understand the world around me remain constant.
+                    </p>
+                    <p class="about_text">
+                        I'm deeply passionate about finding meaningful purpose in everything I do. My optimism is fundamental to who I am—I choose to see the good in most things and in most people. Those around me recognize my communication and leadership skills, calling me a natural coordinator. Beyond my work, I'm a reflective person, constantly seeking wisdom and striving to become more humble and authentic. And yes, storytelling happens to be one of my superpowers.
+                    </p>
+                </div>
+            </div>
+        </div>
 
-                    I am a passionate individual, and nothing fuels my motivation to get out of bed and hustle more than finding meaningful purpose in the work I do. My optimism is a defining trait; I choose to see the good in most things. People often remark on my strong communication and leadership skills. They playfully refer to me as SAM, an acronym for Self-Assigned Manager, as I tend to guide and coordinate effectively, not in an intimidating way, but with the goal of achieving our objectives collectively as a team.
-
-                    Beyond my professional endeavors, I am someone who reflects deeply on my journey, constantly seeking meaning and striving to become humbler and wiser each day. PS: By now, you must have gathered that I am also quite adept at storytelling.
-                </p>
-                
+        <!-- The Professional Section -->
+        <div class="row mt-5 align-items-center">
+            <div class="col-lg-7 order-lg-1">
+                <div class="about_card professional_card">
+                    <div class="about_card_header professional_header">
+                        <i class="fas fa-rocket about_icon"></i>
+                        <h3 class="about_subtitle">The Professional</h3>
+                    </div>
+                    <p class="about_text">
+                        I'm a tech content creator SWE and AI Safety advocate passionate about making complex technologies accessible and understandable. My background in building communities has taught me that great products emerge from understanding user needs, iterating relentlessly, and maintaining an unwavering focus on quality.
+                    </p>
+                    <p class="about_text">
+                        Whether breaking down intricate concepts, analyzing product decisions, or advocating for excellence, I bring a storyteller's perspective and builder's mindset to every project. Through <strong>SamasyaVerse</strong>, I share insights on product thinking, quality assurance, technical architecture, and the human side of tech. My core belief: the best innovations come from those who ask better questions and refuse to accept mediocrity.
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-5 order-lg-2 mb-4 mb-lg-0">
+                <img src="images/samasyaverse.jpeg" class="image_about" alt="SamasyaVerse">
             </div>
         </div>
     </section>
@@ -175,7 +197,6 @@
                     </div>
                 </div>  
             </div> -->
-
             <!-- <div class="col-lg-4 mt-4">
                 <div class="card servicesText">
                     <div class="card-body">
@@ -186,100 +207,10 @@
                         </p>
                     </div>
                 </div>  
-            </div>
-        </div>
-    </section> -->
-
-    <!-- portfolio section-->
-    <section class="section" id="portfolio">
-        <div class="container mt-3">
-            <h1 class="text-center">Portfolio</h1>
-            <div class="row">
-                <div class="col-lg-4 mt-4">
-                    <div class="card">
-                        <img class="card-img-top" src="images/resume.jpg" alt="Card image" style="width:100%">
-                        <div class="card-body">
-                            <h4 class="card-title">PoetryApp</h4>
-                            <p class="card-text"> PoetryApp is a Django-based web application that allows users to explore, create, and manage poetry. A key feature of this app is its integration with the Ollama Qwen2 model to summarize poems, providing insights and concise versions of the poetry content. The app also uses Celery for asynchronous task processing and Redis as the broker for Celery.</p>
-                            <div class="text-center">
-                                <a href="https://github.com/samikshakhadka/PoetryApp" target="_blank" class="btn btn-success">Link</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 mt-4">
-                    <div class="card">
-                        <img class="card-img-top" src="images/Map.png" alt="Card image" style="width:100%">
-                        <div class="card-body">
-                            <h4 class="card-title">BookQL</h4>
-                            <p class="card-text">BookQL is a GraphQL-based API project built using Django and Strawberry GraphQL. This project provides CRUD operations on books through queries and mutations. It utilizes session-based authentication for securing the site.</p>
-                        </br>
-                        </br>
-                        </br>
-                            <div class="text-center">
-                                <a href="https://github.com/samikshakhadka/BookQL" target="_blank" class="btn btn-success">Link</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 mt-4">
-                    <div class="card">
-                        <img class="card-img-top" src="images/webscraping.png" alt="Card image" style="width:100%">
-                        <div class="card-body">
-                            <h4 class="card-title">Museum Mapping</h4>
-                            <p class="card-text">Museum Mapping is a project that maps and visualizes museums in Nepal using spatial data, powered by Django and PostGIS. The project stores the longitude and latitude of museums and provides a list of the top 10 museums closest to the user's location. The user's location is extracted from their browser, making it easy to find nearby museums.</p>
-                            <div class="text-center">
-                                <a href="https://github.com/samikshakhadka/Museum_Mapping" target="_blank" class="btn btn-success">Link</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <br>
-            <!-- <div class="row">
-                <div class="col-lg-4 mt-4">
-                    <div class="card">
-                        <img class="card-img-top" src="images/validationFunction.png" alt="Card image" style="width:100%">
-                        <div class="card-body">
-                            <h4 class="card-title">Generic Data Dictionary Validation</h4>
-                            <p class="card-text">Create a generic validation function using Cerberus and Pydantic for dictionaries and their corresponding validation rules. </p>
-                            <div class="text-center">
-                                <a href="https://github.com/samikshakhadka/Data-Dictionary-Validation-Function" target="_blank" class="btn btn-success">Link</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 mt-4">
-                    <div class="card">
-                        <img class="card-img-top" src="images/analysis.jpeg" alt="Card image" style="width:100%">
-                        <div class="card-body">
-                            <h4 class="card-title"> Unicron Startup Analysis</h4>
-                            <p class="card-text">Conducting a brief analysis on Indian Unicorn startup companies employing Pandas, NumPy, and Matplotlib's Pyplot for data visualization.</p>
-                            <div class="text-center">
-                                <a href="https://github.com/samikshakhadka/Indian_Unicorn_Startup_anlysis" target="_blank" class="btn btn-success">Link</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 mt-4">
-                    <div class="card">
-                        <img class="card-img-top" src="images/calculator.png" alt="Card image" style="width:100%">
-                        <div class="card-body">
-                            <h4 class="card-title">Calculator</h4>
-                            <p class="card-text">This basic project, crafted with tkinter widgets, becomes intriguing with the incorporation of lambda and eval functions.</p>
-                            <div class="text-center">
-                                <a href="https://github.com/samikshakhadka/Calculator-using-tkinter-lambda-expression-" target="_blank" class="btn btn-success">Link</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div> -->
+        </div>
     </section>
-
+    
     <!-- contact section-->
     <!-- <section  id="experience">
         <div class="flip-card mt-3">

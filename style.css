@@ -26,17 +26,30 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Adjust the alpha (last value) to control darkness */
+    background: linear-gradient(135deg, rgba(52, 152, 219, 0.7), rgba(44, 62, 80, 0.7));
 }
 
 .hero_title {
-    padding-top: 10rem;
+    padding-top: 8rem;
     font-size: 4.5rem;
     color: white;
+    font-weight: 700;
+    letter-spacing: -1px;
 }
+
 .hero_desc {
-    font-size: 2rem;
+    font-size: 2.2rem;
+    font-weight: 500;
+    color: white;
 }
+
+.hero_desc_sub {
+    font-size: 1.3rem;
+    color: #ecf0f1;
+    font-weight: 400;
+    margin-top: 1rem;
+}
+
 .hero_text {
     text-align: center;
     position: absolute;
@@ -44,18 +57,21 @@
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
+    z-index: 2;
 }
 
 .image_about {
     width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 .navbarDark {
-    background: #0b0000;
+    background: linear-gradient(90deg, #2c3e50 0%, #34495e 100%);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 
-
- .social-icons {
+.social-icons {
     font-size: 36px;
     cursor: pointer;
 }
@@ -63,35 +79,51 @@
 .fa-instagram:hover,
 .fa-twitter:hover,
 .fa-linkedin:hover, 
-.fa-twitch:hover {
-    color: #fff;
+.fa-twitch:hover,
+.fa-github:hover {
+    color: #3498db;
+    transform: translateY(-3px);
+    transition: all 0.3s ease;
 }
 .fab {
-    color: #000000;
+    color: #2c3e50;
 }
 
 .servicesText.card {
     height: 280px;
     cursor: pointer;
-  }
+    border: 1px solid #ecf0f1;
+    transition: all 0.3s ease;
+}
 .servicesIcon {
     font-size: 36px;
     text-align: center;
     width: 100%;
+    color: #3498db;
 }
 .card-title {
     text-align: center;
+    color: #2c3e50;
+    font-weight: 600;
 }
 .card:hover .servicesIcon {
-    color: #008000;
+    color: #2980b9;
+    transform: scale(1.1);
+}
+.card:hover {
+    box-shadow: 0 8px 25px rgba(52, 152, 219, 0.15);
+    border: 1px solid #3498db;
+    transform: translateY(-5px);
 }
 .servicesText:hover {
-    border: 1px solid #008000;
+    border: 1px solid #3498db;
 }
 
 .footer {
-    background-color: #808080;
+    background: linear-gradient(90deg, #2c3e50 0%, #34495e 100%);
     text-align: center;
+    color: white;
+    padding: 2rem 0;
 }
 
 /* .navbar-nav .nav-link {
@@ -106,17 +138,107 @@
     background-color: #f8f3f3; /* Use the desired shade of grey (hex color code) 
 }  */
 
+/* Modern Enhancements */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+        sans-serif;
+    color: #2c3e50;
+    background-color: #f8f9fa;
+}
+
+h1 {
+    color: #2c3e50;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    position: relative;
+    padding-bottom: 1rem;
+}
+
+h1::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(90deg, #3498db, #2980b9);
+    border-radius: 2px;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: 700;
+    background: linear-gradient(90deg, #3498db, #2980b9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #3498db;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #2980b9;
+}
+
+/* Section headings */
+.section h1 {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Smooth transitions */
+.card,
+.social-icons a,
+.navbar-nav .nav-link {
+    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
 .card {
-    height: 100%; /* Set a fixed height for the card */
+    height: 100%;
+    border: 1px solid #ecf0f1;
+    border-radius: 8px;
 }
 
 .card-img-top {
-    object-fit: cover; /* Ensure the image covers the entire container */
-    height: 200px; /* Set a fixed height for the image */
+    object-fit: cover;
+    height: 200px;
 }
 
 .card-body {
-    height: 100%; /* Make sure the card body takes up the full height */
+    height: 100%;
+}
+
+/* Contact section cards */
+.card.text-center {
+    border: 1px solid #ecf0f1;
+    border-radius: 8px;
+}
+
+.card.text-center:hover {
+    box-shadow: 0 10px 30px rgba(52, 152, 219, 0.2);
+    transform: translateY(-8px);
+}
+
+.btn-outline-primary:hover,
+.btn-outline-dark:hover,
+.btn-outline-danger:hover {
+    background-color: #3498db;
+    border-color: #3498db;
+    color: white;
 }
 
 
@@ -159,3 +281,99 @@
     color: white;
     transform: rotateY(180deg);
   }
+
+/* About Section Cards */
+.about_card {
+    border: 2px solid #ecf0f1;
+    border-radius: 10px;
+    padding: 2rem;
+    background: white;
+    height: 100%;
+    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.about_card:hover {
+    box-shadow: 0 12px 28px rgba(52, 152, 219, 0.15);
+    transform: translateY(-8px);
+    border-color: #3498db;
+}
+
+.about_card_header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 2px solid #ecf0f1;
+}
+
+.personal_header {
+    border-bottom-color: #e91e63;
+}
+
+.professional_header {
+    border-bottom-color: #3498db;
+}
+
+.about_icon {
+    font-size: 2.5rem;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #f8f9fa;
+}
+
+.personal_card .about_icon {
+    color: #e91e63;
+    background: rgba(233, 30, 99, 0.1);
+}
+
+.professional_card .about_icon {
+    color: #3498db;
+    background: rgba(52, 152, 219, 0.1);
+}
+
+.about_subtitle {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #2c3e50;
+}
+
+.about_text {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #34495e;
+    text-align: justify;
+    margin-bottom: 1rem;
+    font-weight: 400;
+}
+
+.about_text:last-child {
+    margin-bottom: 0;
+}
+
+/* Responsive About Cards */
+@media (max-width: 768px) {
+    .about_card {
+        padding: 1.5rem;
+    }
+    
+    .about_icon {
+        font-size: 2rem;
+        width: 50px;
+        height: 50px;
+    }
+    
+    .about_subtitle {
+        font-size: 1.3rem;
+    }
+    
+    .about_text {
+        font-size: 0.95rem;
+    }
+}
